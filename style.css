@@ -31,6 +31,7 @@ body {
 #slides {
   display: flex;
   flex-direction: row;
+  transition: 500ms ease-in-out;
 }
 
 img {
@@ -45,15 +46,21 @@ img {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   opacity: 0.8;
 }
 
-.nav i {
+.fa-circle {
   font-size: 0.6rem;
   padding: 10px 3px;
   color: rgb(50, 50, 50);
 }
 
-.nav i:hover {
+.fa-circle:hover {
   filter: brightness(50%);
+}
+
+.active {
+  filter: brightness(50%);
+  font-size: 0.8rem;
 }
